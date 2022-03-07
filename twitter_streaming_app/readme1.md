@@ -41,6 +41,8 @@ Python Application Start -> tweePY Library -> Connect to Twitter Api
                                    -> Save the data to database collection
                                    -> Allow only unique twitter id's which is equal ttotal count
 
+
+
 Output :
 ----------------------
  ![output.png](output.png)
@@ -93,7 +95,8 @@ CICD: Automated build and deploy pipeline
    4) Notify the Deployment status to users
 
 Cleaning/ETL:
-collecting data and transforming the raw data as required
+Data Ingestion:
+collecting data and transforming the raw data as required (Preparing the data)
 
 Test cycle:
 1) User acceptance testing
@@ -137,7 +140,7 @@ Looking at some of the drawbacks of current POC with large data, here is the sys
          -> Bucketing
 
 With this architecture we can achieve better
-1) Scability (horizontal scalability)
+1) Scalability (horizontal scalability)
 2) Performance
 3) Loosely coupled
 4) Load Balancing
@@ -151,8 +154,9 @@ Level of Efforts
 
 
 Must have features:
-New Project ( no references to look at)
-Window size = 60minutes
+Create New Project ( no references to look at)
+discuss and define Window size (this will require multiple testing and will vary based
+on business requirement)
 Search criteria by only 1 field
 Scability
 Failover Mechanism
