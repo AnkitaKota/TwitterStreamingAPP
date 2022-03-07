@@ -4,7 +4,7 @@ from pytest_mock_resources import create_mongo_fixture
 
 mongo = create_mongo_fixture()
 
-connectionString = 'mongodb+srv://' + db_user_name + ':' + db_user_password + '@cluster0.nf7ja.mongodb.net/' + db_name + '?retryWrites=true&w=majority'
+#connectionString = 'mongodb+srv://' + db_user_name + ':' + db_user_password + '@cluster0.nf7ja.mongodb.net/' + db_name + '?retryWrites=true&w=majority'
 
 def test_create_custom_connection(mongo):
     client = MongoClient(**mongo.pmr_credentials.as_mongo_kwargs())
