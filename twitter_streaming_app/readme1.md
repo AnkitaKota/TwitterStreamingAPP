@@ -142,10 +142,10 @@ With this architecture we can achieve better
 7) Integration
 
 
-Levels of Efforts
+Level of Efforts
 -----------------------
 
-Assumption:
+
 Must have features:
 -> New Project ( no references to look at)
 ->window size = 60minutes
@@ -153,13 +153,20 @@ Must have features:
 -> Scability
 -> Failover Mechanism
 -> Analytics
+-> Architectural Design
+-> Discussion with Business and ML team
+-> Understand on what does the requirement from ML team look like
+Ex: What kind of lables do they need , what input are they expecting to be ingested to model
 
-The level of effort will depend on
+
+Unknows:
 1) Level of details known (top-down or bottom-up)
 2) Amount of Dependency on other teams
 3) Number of resources
 4) Identifying the possible risks and assumptions
 5) Defining the Scope (preferably MVP's)
+
+
 
 
 Estimate timeline
