@@ -147,15 +147,15 @@ Level of Efforts
 
 
 Must have features:
--> New Project ( no references to look at)
-->window size = 60minutes
-->Search criteria by only 1 field
--> Scability
--> Failover Mechanism
--> Analytics
--> Architectural Design
--> Discussion with Business and ML team
--> Understand on what does the requirement from ML team look like
+New Project ( no references to look at)
+Window size = 60minutes
+Search criteria by only 1 field
+Scability
+Failover Mechanism
+Analytics
+Architectural Design
+Discussion with Business and ML team
+Understand on what does the requirement from ML team look like
 Ex: What kind of lables do they need , what input are they expecting to be ingested to model
 
 
