@@ -1,23 +1,22 @@
-from pymongo import MongoClient
+import unittest
+from unittest import mock
 
+from pymongo import MongoClient
 from pytest_mock_resources import create_mongo_fixture
+import mongomock
+from unittest.mock import patch
+from twitter_streaming_app.Twitter_dbconnection import twitter_db_connection
+
 
 mongo = create_mongo_fixture()
+mocked_mongo = mongomock.MongoClient()
+class MyTestCase(unittest.TestCase):
+    @mock.patch("pymongo.collection.Collection.find")
+    def test_create_custom_connection(self,mock_find):
+        mock_find.return_value = 1
 
-#connectionString = 'mongodb+srv://' + db_user_name + ':' + db_user_password + '@cluster0.nf7ja.mongodb.net/' + db_name + '?retryWrites=true&w=majority'
 
-def test_create_custom_connection(mongo):
-    client = MongoClient(**mongo.pmr_credentials.as_mongo_kwargs())
-    db = client[mongo.config["database"]]
 
-    collection = db["customers"]
-    to_insert = [
-        {"name": "John"},
-        {"name": "Viola"},
-    ]
-    collection.insert_many(to_insert)
 
-    result = collection.find().sort("name")
-    returned = [row for row in result]
 
-    assert returned == to_insert
+

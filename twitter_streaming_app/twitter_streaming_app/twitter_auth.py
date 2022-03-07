@@ -3,12 +3,14 @@
 import tweepy
 import configparser
 import logging
-
 import time
 from tweepy import Stream
 from twitter_streaming_app.twitter_processing import processing
 tracklist = ['#justinbieber']
 
+
+'''This class is meant for performing oauth authentication to Twitter. Once
+we achieve successful connection, the stream of data will be filtered by keyword: #justinbieber'''
 class twitter_auth:
     def auth(self):
         logger = logging.getLogger()

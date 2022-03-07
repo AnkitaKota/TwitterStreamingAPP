@@ -7,11 +7,14 @@ from twitter_streaming_app.Twitter_dbconnection import twitter_db_connection
 import logging
 logger = logging.getLogger()
 db_data= {}
-global total_tweets
-global unique_tweetcount
+
+'''Here we are using tweepy streaming library wherein we have stream listener which will keep polling for new records  '''
 
 
 class processing(StreamListener):
+    total_tweets = 0
+    unique_tweetcount = 0
+
     def on_connect(self):
         print("You are connected to the Twitter API")
 
@@ -25,7 +28,7 @@ class processing(StreamListener):
         try:
             raw_data = json.loads(data)
             if 'text' in raw_data:
-                total_tweets += 1
+
                 db_data['twitter_id']= raw_data['id']
                 db_data['username'] = raw_data['user']['screen_name']
                 db_data['created_at'] = str(parser.parse(raw_data['created_at']))
@@ -33,8 +36,9 @@ class processing(StreamListener):
                 db_data['tweet'] = raw_data['text']
                 db_data['retweet'] = raw_data['retweet_count']
                 db_data['location'] = raw_data['user']['location']
-#               json.dumps(db_data)
                 logger.info("Json converted Response of Twitter Data" , db_data)
+
+                self.total_tweets += 1
                 # Parsing each word in words
                 tokens = nltk.word_tokenize(tweet)
                 filter_key_words = ['music', 'Music', 'MUSIC', '#music', '#MUSIC', '#Music']
@@ -45,7 +49,7 @@ class processing(StreamListener):
                     #Store in Mango DB
                     print("Justin Biebier's music Tweet found  at: {} ")
                     if twitter_db_connection().config(db_data) == True:
-                        unique_tweetcount +=1
+                        self.unique_tweetcount +=1
                         print ("The No. of tweets unique tweets consumed: %d " % (unique_tweetcount) )
                         logger.info("The No. of unique tweets consumed: %d " % (unique_tweetcount))
 

@@ -1,9 +1,14 @@
 from enum import unique
-
 import pymongo
 from pymongo import MongoClient
 import configparser
 import json
+
+'''This class is meant for connecting to Mango DB and for saving the data
+Note: The future version will be a service to make it more decoupled
+Steps: Create Interface as in future it can be SQL server or other Server
+Create Models -> DTO'''
+
 class twitter_db_connection:
     def config(self,insert_db_data):
         config = configparser.ConfigParser()
@@ -15,7 +20,7 @@ class twitter_db_connection:
         self.insert(connectionString,insert_db_data)
 
 
-
+    '''Save only unique twitter records in Mango DB. To Achieve this, I have created unique index'''
     def insert(self, connectionString,insert_db_data):
         client = MongoClient(connectionString)
 
