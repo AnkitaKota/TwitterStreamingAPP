@@ -49,10 +49,10 @@ Output :
  ![output.png](Images/output.png)
 
 Data filtering steps:
-1. Kept a track of Number of tweets: tweetCount
-2. Filtering out duplicate tweet by initialising a list and checking if the tweet has already been consumed.
-3. Since the previous step has been executed, Number of tweets and Number of unique tweets will remain same.
-4. I'm also filtering out on the keyword '#music' or 'music'.
+1. Filtering out on the keyword '#music' or 'music'.Kept a track of Number of tweets: tweetCount
+2. Filtering out duplicate tweet by creating unique index in DB which will restrict by duplicates by twitter id.
+3. Keeping a track of unqiue tweetcount if the DB insertion is successful
+4. Number of tweets consumed will be number of tweets coming in pipeline after filtering with "Justin Bieber"
 
 ![img_2.png](Images/img_2.png)
 
