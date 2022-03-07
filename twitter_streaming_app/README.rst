@@ -2,6 +2,7 @@
 twitter_streaming_app
 =====================
 
+Please refer to readme1.md
 
 .. image:: https://img.shields.io/pypi/v/twitter_streaming_app.svg
         :target: https://pypi.python.org/pypi/twitter_streaming_app
@@ -23,15 +24,3 @@ Twitter streaming data and persisting it in DB
 * Documentation: https://twitter-streaming-app.readthedocs.io.
 
 
-Features
---------
-
-* TODO
-
-Credits
--------
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

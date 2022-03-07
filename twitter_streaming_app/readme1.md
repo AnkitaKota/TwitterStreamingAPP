@@ -1,5 +1,6 @@
-**Twitter Streaming **
-=
+=====================
+twitter_streaming_app
+=====================
 
 Problem Statement: Here we are implementing a pipeline which will stream twitter data and find all tweets consisting of keyword
 Justin Bieber and then filter by music; store in any db with no duplicates and find all the total unique tweets
@@ -15,10 +16,11 @@ I have used Tweepy python library to connect twitter streaming API by handling a
     2) consumer_secret
     3) api_key
     4) api_secret
-  4) used CookieCutter for the project template
+
  ![img_1.png](img_1.png)
 Useful Reference:
  https://developer.twitter.com/en/support/twitter-api/developer-account
+ 4) used CookieCutter for the project template
  5) I have used MongoDB free Cloud account to store the tweets data
 
 References:
