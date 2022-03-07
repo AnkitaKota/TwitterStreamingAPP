@@ -1,5 +1,5 @@
-=====================
-twitter_streaming_app
+
+Twitter_Streaming_APP
 =====================
 
 Problem Statement: Here we are implementing a pipeline which will stream twitter data and find all tweets consisting of keyword
