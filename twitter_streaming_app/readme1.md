@@ -112,7 +112,7 @@ Documentation:
 3) Support documentation
 
 
-POC to production ready
+Production Ready Solution
 -----------------------
 
 ![img_3.png](img_3.png)
