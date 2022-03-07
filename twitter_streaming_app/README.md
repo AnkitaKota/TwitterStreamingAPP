@@ -18,6 +18,7 @@ I have used Tweepy python library to connect twitter streaming API by handling a
     4) api_secret
 
  ![img_1.png](img_1.png)
+
 Useful Reference:
  https://developer.twitter.com/en/support/twitter-api/developer-account
  4) used CookieCutter for the project template
