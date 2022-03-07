@@ -24,7 +24,7 @@ I have used Tweepy python library to connect twitter streaming API by handling a
     3) api_key
     4) api_secret
 
-![img_1](https://user-images.githubusercontent.com/75229326/157054830-0c19023c-6c7f-4120-a47e-2e6f7a35106e.png)
+(https://user-images.githubusercontent.com/75229326/157054830-0c19023c-6c7f-4120-a47e-2e6f7a35106e.png)
 
 Useful Reference:
  https://developer.twitter.com/en/support/twitter-api/developer-account
@@ -53,7 +53,7 @@ Python Application Start -> tweePY Library -> Connect to Twitter Api
 
 Output :
 ----------------------
-![Screen Shot 2022-03-07 at 1 31 44 AM](https://user-images.githubusercontent.com/75229326/157054870-0470cdd6-1e9e-4529-9bd8-dbc3e3710aad.png)
+(https://user-images.githubusercontent.com/75229326/157054870-0470cdd6-1e9e-4529-9bd8-dbc3e3710aad.png)
 
 Data filtering steps:
 1. Kept a track of Number of tweets: tweetCount
@@ -61,7 +61,7 @@ Data filtering steps:
 3. Since the previous step has been executed, Number of tweets and Number of unique tweets will remain same.
 4. I'm also filtering out on the keyword '#music' or 'music'.
 
-![img_2](https://user-images.githubusercontent.com/75229326/157054840-c83febaf-93f8-46d5-9dd8-711798855a7e.png)
+(https://user-images.githubusercontent.com/75229326/157054840-c83febaf-93f8-46d5-9dd8-711798855a7e.png)
 
 
 RUN configurations :
@@ -130,7 +130,7 @@ Documentation:
 Production Ready Solution
 -----------------------
 
-![img_3](https://user-images.githubusercontent.com/75229326/157054846-8e1edc0f-1e1a-4c5e-a02b-09fc79e40c28.png)
+(https://user-images.githubusercontent.com/75229326/157054846-8e1edc0f-1e1a-4c5e-a02b-09fc79e40c28.png)
 
 Looking at some of the drawbacks of current POC with large data, here is the system I would like to propose
 
