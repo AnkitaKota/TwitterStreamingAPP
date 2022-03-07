@@ -17,7 +17,7 @@ I have used Tweepy python library to connect twitter streaming API by handling a
     3) api_key
     4) api_secret
 
- ![img_1.png](img_1.png)
+ ![img_1.png](Images/img_1.png)
 
 Useful Reference:
  https://developer.twitter.com/en/support/twitter-api/developer-account
@@ -46,7 +46,7 @@ Python Application Start -> tweePY Library -> Connect to Twitter Api
 
 Output :
 ----------------------
- ![output.png](output.png)
+ ![output.png](Images/output.png)
 
 Data filtering steps:
 1. Kept a track of Number of tweets: tweetCount
@@ -54,7 +54,7 @@ Data filtering steps:
 3. Since the previous step has been executed, Number of tweets and Number of unique tweets will remain same.
 4. I'm also filtering out on the keyword '#music' or 'music'.
 
-![img_2.png](img_2.png)
+![img_2.png](Images/img_2.png)
 
 
 RUN configurations :
@@ -123,7 +123,7 @@ Documentation:
 Production Ready Solution
 -----------------------
 
-![img_3.png](img_3.png)
+![img_3.png](Images/img_3.png)
 
 Looking at some of the drawbacks of current POC with large data, here is the system I would like to propose
 
