@@ -41,7 +41,9 @@ Python Application Start -> tweePY Library -> Connect to Twitter Api
                                    -> Save the data to database collection
                                    -> Allow only unique twitter id's which is equal ttotal count
 
-Output: ![output.png](output.png)
+Output :
+----------------------
+ ![output.png](output.png)
 
 Data filtering steps:
 1. Kept a track of Number of tweets: tweetCount
@@ -50,6 +52,8 @@ Data filtering steps:
 4. I'm also filtering out on the keyword '#music' or 'music'.
 
 ![img_2.png](img_2.png)
+
+
 RUN configurations :
 ----------------------
 
