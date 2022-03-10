@@ -4,7 +4,7 @@ import pytest
 import mongomock
 from unittest import mock
 import configparser
-from twitter_streaming_app.twitter_auth import twitter_auth
+from src.twitter_auth import twitter_auth
 
 
 class TweepyAPIAuthTest(unittest.TestCase):

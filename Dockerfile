@@ -13,10 +13,12 @@ COPY requirements.txt .
 #install dependencies
 RUN pip3 install -r requirements.txt
 
-ENV PYTHONPATH "${PYTHONPATH}:/twitter_streaming_app"
+ENV PYTHONPATH "${PYTHONPATH}:/src"
+
+EXPOSE 27017
 
 #copy the content of the local src directory to the working directory
-COPY twitter_streaming_app/ ./twitter_streaming_app/
+COPY src/ ./src
 
 #command to run on container start
-CMD ["python", "./twitter_streaming_app/cli.py"]
+CMD ["python", "./src/cli.py"]

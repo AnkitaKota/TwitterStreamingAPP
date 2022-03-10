@@ -3,11 +3,11 @@ import unittest
 import pytest
 import mongomock
 from unittest import mock
-from twitter_streaming_app.Twitter_dbconnection import twitter_db_connection
-from twitter_streaming_app.mango_db import crud
+from src.Twitter_dbconnection import twitter_db_connection
+from src.mango_db import crud
 import configparser
 
-from twitter_streaming_app.twitter_auth import twitter_auth
+from src.twitter_auth import twitter_auth
 
 
 class DBConnectionTest(unittest.TestCase):
